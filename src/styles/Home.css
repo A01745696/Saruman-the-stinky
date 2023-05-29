@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+.Home{
+    font-family: 'Righteous', cursive;
+}
+
+.Menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Menu h1{
+    font-size: 100px;
+    border-radius: 20px;
+    background: rgba(15,166,153,0.67);
+    box-shadow: 10px 0px 50px 50px rgba(15,166,153,0.67);
+}
+
+.Menu form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.Menu button {
+    margin-top: 20px;
+    padding: 30px 50px 30px 50px;
+    border-radius: 20px;
+    font-family: 'Righteous', cursive;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.Select10{
+    width: 300px;
+}

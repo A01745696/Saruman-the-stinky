@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+.LeaderBoard{
+    font-family: 'Righteous', cursive;
+}
+
+.Board{
+    width: 700px;
+    border-top: black solid 3px;
+    margin-top: 10px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container h1{
+    font-size: 50px;
+}
