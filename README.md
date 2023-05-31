@@ -67,6 +67,10 @@
 <img src="src/images/RDS.png">
 <img src="src/images/EC2.png">
 
+
+## Unit test
+<img src="src/images/test.png">
+
 ## Acknowledgements and references 
 
 * Fireship (2022, March 14) 10 Design Patterns Explained in 10 Minutes [video file] Retrieved from: https://www.youtube.com/watch?v=tv-_1er1mWI
