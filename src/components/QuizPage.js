@@ -34,8 +34,12 @@ const QuizPage = ({ numQuestions, email }) => {
 
   const HandleAnswerClick = (answer) => {
     if (answer === arrQuestions[currentQ]?.correct) {
+      window.alert("Correct answer!");
       setScore(score + 1);
       console.error("score", score);
+    }
+    else{
+      window.alert("Sadly, its wrong. The correct answer was: ", arrQuestions[currentQ]?.correct)
     }
     // console.log("answer ", answer);
     // console.log("correct", arrQuestions[currentQ]?.correct);
