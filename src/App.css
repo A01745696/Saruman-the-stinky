@@ -1,8 +1,47 @@
-body{
-    background-color: rgb(26, 11, 224);
-    background-image: url('./images/wave\ \(2\).svg');
-    background-size: 1600px;
-    background-repeat: no-repeat;
-    background-position-y: bottom;
-    min-height: 650px;
+body {
+  overflow: hidden;
+  background-color: #f5efd7;
+}
+
+.App {
+  width: 100%;
+}
+
+.AppB {
+  background: url("./images/wave1.svg") repeat-x;
+  position: absolute;
+  bottom: -30px;
+  width: 6400px;
+  height: 198px;
+  animation: wave 10s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  transform: translate3d(0, 0, 0);
+  overflow: hidden;
+}
+
+.AppB:nth-of-type(2) {
+  background: url("./images/wave.svg") repeat-x;
+  bottom: -30px;
+  animation: wave 8s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite,
+    swell 8s ease -1.25s infinite;
+  opacity: 1;
+}
+
+@keyframes wave {
+  0%,
+  100% {
+    margin-left: 0;
+  }
+  50% {
+    margin-left: -1600px;
+  }
+}
+
+@keyframes swell {
+  0%,
+  100% {
+    transform: translate3d(0, -25px, 0);
+  }
+  50% {
+    transform: translate3d(0, 10px, 0);
+  }
 }
