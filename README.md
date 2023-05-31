@@ -18,8 +18,8 @@
 * Quiz Creation: Thanks to the questions pool in the database, there is going to be a lot of posible combinations to make a quiz for every
 *  The leaderboard: A leaderboard to show how high a user has scored by answering all the questions
 
-## Diagrams(s)
-![Class Diagram] (../FrontEnd/images/Diagram.png)
+## Diagram(s)
+![Class Diagram] (FrontEnd/images/Diagram.png)
 
 ## Design Patterns used and SOLID principles
 
