@@ -9,7 +9,7 @@ const Leaderboard = () => {
 
   const fetchData = () => {
     axios
-      .get("http://34.201.243.102:8080/getHighScore")
+      .get("http://34.234.7.159:8080/getHighScore")
       .then((response) => {
         // Handle the response data
         console.log(response);

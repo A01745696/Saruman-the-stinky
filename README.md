@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+# QuizApp the stincky
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## General overview
+###### This QuizzApp is a web-based application built with Python and Flask for the backend, React for the frontend, we hosted it on a EC2 instance on Amazon Web Services (AWS). It utilizes a MySQL  database to store the questions, answers, users and the scoreboard
 
-In the project directory, you can run:
+#### Functionality: 
+###### The project will have a responsive interface that enables users to interact by selecting buttons on the screen. It will provide the flexibility for users to choose the number of questions per attempt, ranging from 1 to 10. Additionally, a diverse set of questions will be available, allowing for random selection.
 
-### `npm start`
+###### To ensure a seamless user experience, the questions will be displayed in an orderly manner, and users will only be able to progress to the next question after providing an answer. After each response, the program will present the correct answer and indicate whether the user's response was correct or incorrect.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+###### Upon completion of the quiz, the user will be presented with several elements, including a total score reflecting their performance, a leaderboard showcasing the highest scores, an option to restart the quiz, and the ability to add their score to the leaderboard under a username of their choice.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+###### If users choose to add their score to the leaderboard, they will have the opportunity to enter a name. In the event of a tie, the new score will be placed higher in the leaderboard to reflect the improved ranking.
 
-### `npm test`
+###### To facilitate data management, the project will establish a connection to a database. This database will be responsible for storing the questions as well as the leaderboard, ensuring the information is securely managed and readily accessible.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### Key Features:
+* User Registration and Authentication: Users can create accounts and log in securely into the QuizApp
+* Quiz Creation: Thanks to the questions pool in the database, there is going to be a lot of posible combinations to make a quiz for every
+*  The scoreboard: A leaderboard to show how high a user has scored by answering all the questions
 
-### `npm run build`
+## Diagrams(s)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Design Patterns used and SOLID principles
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+ ###### For this project, the chosen architectural structure is the Model View Controller (MVC). MVC effectively separates the application into three interconnected components, each assigned with specific responsibilities. This clear separation of concerns simplifies code comprehension and modification, as changes made to one component do not impact the others. Furthermore, the modularity of the MVC pattern enables independent development and testing of each component, facilitating code reuse in diverse contexts without requiring modifications.
 
-### `npm run eject`
+###### In addition to the MVC architecture, the development approach follows the Single Responsibility Principle (SRP). This principle contributes to the creation of modular and maintainable code by assigning a single responsibility to each class. By focusing on a specific task, the code becomes easier to understand, and modifications to one class have minimal impact on other parts of the system.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+###### The adherence to SRP also enhances code reusability as each class can be utilized in different contexts without modification. This promotes efficient utilization of code components, streamlining the development process and increasing adaptability.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## How to install and run the app
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Access the Quiz Application:
+    * Open your web browser (Chrome, Firefox, Safari, etc.).
+    * Enter the URL or web address where the quiz 
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Acknowledgements and references 
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* Fireship (2022, March 14) 10 Design Patterns Explained in 10 Minutes [video file] Retrieved from: https://www.youtube.com/watch?v=tv-_1er1mWI
+* Grace M. (2023).  lectures   [PowerPoint slides]. ITESM,  Estado de México. 

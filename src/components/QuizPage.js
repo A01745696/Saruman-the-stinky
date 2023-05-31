@@ -19,9 +19,9 @@ const QuizPage = ({ numQuestions, email }) => {
 
   const postData = () => {
     console.log(scoreName);
-    // axios.get(
-    //   `http://34.201.243.102:8080/postScore?email=${email}&score=${score}&score_name=${scoreName}`
-    // );
+     axios.get(
+       `http://34.234.7.159:8080/postScore?email=${email}&score=${score}&score_name=${scoreName}`
+     );
   };
 
   const HandleAnswerClick = (answer) => {
@@ -71,7 +71,7 @@ const QuizPage = ({ numQuestions, email }) => {
 
   const fetchData = () => {
     axios
-      .get("http://34.201.243.102:8080/questions")
+      .get("http://34.234.7.159:8080/questions")
       .then((response) => {
         // Handle the response data
         const arrNuevo = response.data.Resultado.map((pregunta) => {
@@ -111,7 +111,7 @@ const QuizPage = ({ numQuestions, email }) => {
       <Navbar />
 
       <div className="Question">
-        <h1>Question</h1>
+        <h1>Question {currentQ + 1}</h1>
         <h2>{Q}</h2>
         <div className="QuestionC">
           <div onClick={() => HandleAnswerClick("a")} className="OptionA">
