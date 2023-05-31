@@ -19,8 +19,7 @@
 *  The leaderboard: A leaderboard to show how high a user has scored by answering all the questions
 
 ## Diagram(s)
-![Class Diagram] (FrontEnd/images/Diagram.png)
-
+<img src="src/images/Diagram.png">
 ## Design Patterns used and SOLID principles
 
  ###### For this project, the chosen architectural structure is the Model View Controller (MVC). MVC effectively separates the application into three interconnected components, each assigned with specific responsibilities. This clear separation of concerns simplifies code comprehension and modification, as changes made to one component do not impact the others. Furthermore, the modularity of the MVC pattern enables independent development and testing of each component, facilitating code reuse in diverse contexts without requiring modifications.
@@ -64,6 +63,9 @@
     * To exit the quiz application, simply close the web browser tab or window. 
 
 
+## RDS Conection and EC2
+<img src="src/images/RDS.png">
+<img src="src/images/EC2.png">
 
 ## Acknowledgements and references 
 
