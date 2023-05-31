@@ -39,7 +39,7 @@ const QuizPage = ({ numQuestions, email }) => {
       console.error("score", score);
     }
     else{
-      window.alert("Sadly, its wrong. The correct answer was: ", arrQuestions[currentQ]?.correct)
+      window.alert(`Sadly, its wrong. The correct answer was: ${arrQuestions[currentQ]?.correct}`)
     }
     // console.log("answer ", answer);
     // console.log("correct", arrQuestions[currentQ]?.correct);
@@ -53,7 +53,7 @@ const QuizPage = ({ numQuestions, email }) => {
       postData();
       navegar(`/leaderboard`);
     }
-  }, [scoreName]);
+  }, [scoreName]);  
 
   useEffect(() => {
     if (firstUpdate.current) {
