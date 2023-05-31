@@ -19,7 +19,7 @@
 *  The leaderboard: A leaderboard to show how high a user has scored by answering all the questions
 
 ## Diagrams(s)
-![Class Diagram] (images/Diagram.png)
+![Class Diagram] (../FrontEnd/images/Diagram.png)
 
 ## Design Patterns used and SOLID principles
 
