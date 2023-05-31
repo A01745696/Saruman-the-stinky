@@ -51,7 +51,7 @@ def getHighScore():
     try:
         coneccion = mysql.connector.connect(user=username, password=password, host=server, database=database)
         cursor = coneccion.cursor()
-        query = "Select email, MAX(score) as score, score_name FROM Score GROUP BY email ORDER BY score DESC;"
+        query = "Select email, MAX(score) as score, score_name FROM Score GROUP BY email ORDER BY score DESC LIMIT 10;"
         cursor.execute(query)
         array = []
 
